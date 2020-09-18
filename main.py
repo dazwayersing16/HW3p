@@ -1,5 +1,7 @@
+# Author: Adam Warsing ajw6150@psu.edu
+
 def digit_sum(n):
-  if n/10 == 0:
+  if n == 0:
     return 0
   else:
     return int(n%10 + digit_sum((n - n%10)/10))
